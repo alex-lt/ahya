@@ -4,7 +4,9 @@
   box-sizing: border-box
 
 .body
-  font-size: 14px
+  background-color: $bg-color
+  font-family: $open-sans
+  color: $primary
 
 .container
   max-width: 1110px
@@ -17,3 +19,16 @@
   border: none
   outline: none
   cursor: pointer
+  border-radius: 8px
+  background-color: $primary
+  &--no-bg
+    background-color: transparent
+  &--small
+    border-radius: 4px
+
+.a 
+  color: inherit
+  text-decoration: none
+
+.ul
+  list-style: none
