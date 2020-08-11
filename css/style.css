@@ -536,6 +536,10 @@ template {
   color: #183B56;
 }
 
+.header__navbar-link:hover {
+  color: #1565D8;
+}
+
 .header__navbar-button {
   margin-left: 40px;
   font-family: "OpenSans-Bold", sans-serif;
@@ -547,6 +551,11 @@ template {
   border: 2px solid #1565D8;
   color: #1565D8;
   padding: 13px 24px;
+}
+
+.header__navbar-button:hover {
+  color: #183B56;
+  border: 2px solid #183B56;
 }
 
 .navbar__button-menu {
