@@ -565,15 +565,24 @@ template {
 .hero {
   margin: auto;
   margin-bottom: 120px;
+}
+
+.hero__bg-wpar {
+  width: 1280px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: -1;
   position: relative;
 }
 
 .hero-bg {
-  width: 1280px;
   position: absolute;
-  z-index: -1;
   background: -webkit-gradient(linear, right top, left top, color-stop(67.34%, rgba(238, 238, 238, 0.0001)), to(#E8EAE9));
   background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%);
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hero-wrapper {
@@ -713,12 +722,16 @@ template {
     height: 2px;
     background-color: #3A4C66;
   }
-  .hero-bg {
+  .hero__bg-wpar {
     width: 728px;
-    z-index: -1;
     left: 50%;
-    -webkit-transform: translate(-50%);
-            transform: translate(-50%);
+    -webkit-transform: translate(-97%);
+            transform: translate(-97%);
+  }
+  .hero-bg {
+    overflow: hidden;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .hero-wrapper {
     padding: 42px 0 36px 0;

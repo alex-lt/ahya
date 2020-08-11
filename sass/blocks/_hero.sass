@@ -1,12 +1,17 @@
 .hero
   margin: auto
   margin-bottom: 120px
-  position: relative
-  &-bg
+  &__bg-wpar
     width: 1280px
-    position: absolute
+    left: 50%
+    transform: translate(-50%)
     z-index: -1
+    position: relative
+  &-bg
+    position: absolute
     background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%)
+    overflow: hidden
+    object-fit: cover
   &-wrapper
     padding: 62px 0 46px 37px
   &__badges
