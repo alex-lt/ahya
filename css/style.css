@@ -496,7 +496,10 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 36px 36px 0;
+  padding: 26px 0 26px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__navbar {
@@ -521,6 +524,10 @@ template {
   min-width: 397px;
 }
 
+.header__navbar-menu--dn {
+  display: none;
+}
+
 .header__navbar-item {
   font-family: "OpenSans-Bold", sans-serif;
   font-size: 16px;
@@ -540,5 +547,68 @@ template {
   border: 2px solid #1565D8;
   color: #1565D8;
   padding: 13px 24px;
+}
+
+.navbar__button-menu {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+  .header__navbar {
+    display: none;
+  }
+  .button-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    justify-items: center;
+    width: 22px;
+    height: 17px;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+  .button-menu__line {
+    width: 22px;
+    height: 2px;
+    background-color: #3A4C66;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 272px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
