@@ -9,4 +9,26 @@ $(document).ready(function(){
       };
   });
 
+  // filtres
+
+  var filter = $("[data-filter]");
+
+  filter.on('click', function (event) {
+    event.preventDefault();
+
+    var cat = $(this).data('filter');
+    
+    $("[data-cat]").each(function () {
+      
+      var itemCat = $(this).data('cat');
+
+      if(itemCat != cat) {
+        $(this).addClass('hide');
+      } else {
+        $(this).removeClass('hide');
+      }
+
+    });
+  });
+
 });
