@@ -565,9 +565,11 @@ template {
 .hero {
   margin: auto;
   margin-bottom: 120px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(67.34%, rgba(238, 238, 238, 0.0001)), to(#E8EAE9));
+  background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%);
 }
 
-.hero__bg-wpar {
+.hero__bg-wrap {
   width: 1280px;
   left: 50%;
   -webkit-transform: translate(-50%);
@@ -578,8 +580,6 @@ template {
 
 .hero-bg {
   position: absolute;
-  background: -webkit-gradient(linear, right top, left top, color-stop(67.34%, rgba(238, 238, 238, 0.0001)), to(#E8EAE9));
-  background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%);
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
@@ -722,19 +722,36 @@ template {
     height: 2px;
     background-color: #3A4C66;
   }
-  .hero__bg-wpar {
+  .hero {
+    margin-bottom: 80px;
+  }
+  .hero__bg-wrap {
     width: 728px;
     left: 50%;
-    -webkit-transform: translate(-97%);
-            transform: translate(-97%);
+    -webkit-transform: translate(-80%);
+            transform: translate(-80%);
   }
   .hero-bg {
     overflow: hidden;
     -o-object-fit: cover;
        object-fit: cover;
+    height: 624px;
   }
   .hero-wrapper {
     padding: 42px 0 36px 0;
+  }
+  .hero__title {
+    font-size: 48px;
+    line-height: 60px;
+    margin: 24px 0 20px 0;
+  }
+  .hero__text {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 36px;
+  }
+  .hero__button {
+    margin-bottom: 40px;
   }
 }
 
@@ -747,6 +764,49 @@ template {
 @media (max-width: 320px) {
   .container {
     max-width: 272px;
+  }
+  .header {
+    margin-bottom: 24px;
+  }
+  .hero {
+    margin-bottom: 80px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(47.32%, rgba(238, 238, 238, 0.0001)), color-stop(65.51%, #E8EAE9));
+    background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%);
+  }
+  .hero__bg-wrap {
+    left: 50%;
+    -webkit-transform: translate(-115%);
+            transform: translate(-115%);
+  }
+  .hero-wrapper {
+    padding: 383px 0 36px 0;
+    text-align: center;
+  }
+  .hero__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .hero__text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .hero__button {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .hero__advantages {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .hero__advantages-item {
+    justify-items: center;
+  }
+  .hero__advantages-item--ml {
+    margin-left: 35%;
+    margin-top: 16px;
+  }
+  .hero__advantages-text {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
