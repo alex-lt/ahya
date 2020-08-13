@@ -15,20 +15,31 @@ $(document).ready(function(){
 
   filter.on('click', function (event) {
     event.preventDefault();
-
-    var cat = $(this).data('filter');
-    
+    var cat = $(this).data('filter'); 
     $("[data-cat]").each(function () {
-      
       var itemCat = $(this).data('cat');
-
       if(itemCat != cat) {
         $(this).addClass('hide');
       } else {
         $(this).removeClass('hide');
       }
-
     });
   });
+
+  // testimonial slider
+  var testimonialSlider = new Swiper('.testimonial-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    passiveListeners: true,
+    autoplay: {
+      delay: 7000,
+    },
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  })
 
 });
