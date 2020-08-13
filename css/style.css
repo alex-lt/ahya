@@ -441,12 +441,6 @@ template {
   display: none;
 }
 
-.svg-sprite {
-  fill: #fff;
-  stroke: #000;
-  stroke-width: 2px;
-}
-
 @font-face {
   font-family: "OpenSans";
   font-family-src: url("../fonts/open-sans/OpenSans-Regular.woff") format("woff");
