@@ -34,12 +34,41 @@ $(document).ready(function(){
     passiveListeners: true,
     autoplay: {
       delay: 7000,
+      disableOnInteraction: false,
     },
   
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
+    on: {
+      init() {
+        this.el.addEventListener('mouseenter', () => {
+          this.autoplay.stop();
+        });
+  
+        this.el.addEventListener('mouseleave', () => {
+          this.autoplay.start();
+          });
+        }
+      },
+    })
+
+  //stories slider
+  var storiesSlider = new Swiper('.stories-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.stories-button--next',
+      prevEl: '.stories-button--prev',
+    },
+  
   })
+
+
 
 });
