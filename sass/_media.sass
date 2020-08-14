@@ -1,10 +1,10 @@
 @media (max-width: 1200px)
   .container
-    max-width: 90%
+    width: 90%
 
 @media (max-width: 992px)
   .container
-    max-width: 90%
+    width: 90%
 
 @media (max-width: 768px)
   .container 
@@ -38,14 +38,12 @@
   //hero
   .hero
     margin-bottom: 80px
-    &__bg-wrap
-      width: 728px  
-      left: 50%
-      transform: translate(-80%)  
-    &-bg
-      overflow: hidden
-      object-fit: cover
-      height: 624px
+    // &__bg-wrap
+    //   left: 50%
+    //   transform: translate(-80%) 
+    // &-bg
+    //   max-width: 728px 
+    //   height: 624px
     &-wrapper
       padding: 42px 0 36px 0
     &__title
@@ -118,15 +116,46 @@
       margin-bottom: 36px
   //testimonial
 
+  //stories
+  .stories
+    margin-bottom: 80px
+    &-wrapper
+      flex-wrap: wrap
+    &__wrapper-top
+      margin: auto
+      margin-top: 79px
+      margin-bottom: 36px
+      max-width: 510px
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      text-align: center
+    &__title
+      margin-right: 0
+    &__text
+      margin-bottom: 32px
+    &-button
+      &--prev
+        left: -4%
+      &--next
+        right: 0
+    &-container
+      padding: 0
+    &-slide
+      display: flex
+      justify-content: space-between
+      align-items: center
+  //stories
+
   
 
 @media (max-width: 480px)
   .container
-    max-width: 90%
+    width: 90%
 
 @media (max-width: 320px)
   .container 
-    max-width: 290px
+    width: 290px
 
   // header
   .header
@@ -137,10 +166,10 @@
    //hero
   .hero
     margin-bottom: 64px
-    background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%)
-    &__bg-wrap
-      left: 50%
-      transform: translate(-115%)
+    // background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%)
+    // &__bg-wrap
+    //   left: 50%
+    //   transform: translate(-115%)
     &-wrapper
       padding: 383px 0 36px 0
       text-align: center
@@ -268,3 +297,58 @@
         content: '- '
         color: $primary
   //testimonial
+
+  //stories
+  .stories
+    margin-bottom: 80px
+    &__wrapper-top
+      margin: auto
+      margin-top: 79px
+      margin-bottom: 36px
+      max-width: 510px
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      text-align: center
+    &__title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 16px
+    &__text
+      font-size: 16px
+      line-height: 28px
+      margin-bottom: 36px
+
+    &-container
+      max-width: 280px
+      display: flex
+      margin: auto
+    &__swiper
+      &-wrapper
+        max-width: 280px
+    &-slide
+      display: flex
+      flex-wrap: wrap
+      &__item
+        position: relative
+        max-width: 270px
+        min-height: 407px
+        border-radius: 8px
+        overflow: hidden
+        object-fit: cover
+        margin-bottom: 24px
+        &:last-child
+          margin-bottom: 24px
+      &__img
+        max-height: 277px 
+      &__wrapper
+        padding: 20px 
+        min-height: 110px
+      &__title
+        font-size: 20px
+        line-height: 24px
+        margin-bottom: 16px
+      &__link
+        font-size: 16px
+        line-height: 22px
+  //stories
