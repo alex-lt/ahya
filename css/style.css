@@ -1172,6 +1172,130 @@ template {
   background-color: #1565D8;
 }
 
+.footer {
+  margin-bottom: 80px;
+}
+
+.footer-top {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 263px (minmax(165px, max-content))[4];
+      grid-template-columns: 263px repeat(4, minmax(165px, -webkit-max-content));
+      grid-template-columns: 263px repeat(4, minmax(165px, max-content));
+  grid-gap: 30px;
+  margin-bottom: 96px;
+}
+
+.footer-top__item--logotype {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer-top__logo {
+  margin-bottom: 27px;
+}
+
+.footer-top__text {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 32px;
+  color: #5A7184;
+}
+
+.footer-top__social-gruop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 185px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-top__social-item {
+  position: relative;
+}
+
+.footer-top__social-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: #5A7184;
+  opacity: 0.1;
+  border-radius: 2000px;
+}
+
+.footer-top__social-icon {
+  position: relative;
+  top: 12px;
+  left: 12px;
+}
+
+.footer-top__title {
+  font-size: 18px;
+  line-height: 25px;
+  font-family: "OpenSans-SemiBold", sans-serif;
+  margin: 0;
+  margin-bottom: 31px;
+}
+
+.footer-top__list-item {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 24px;
+}
+
+.footer-top__list-link:hover {
+  color: #1565D8;
+}
+
+.footer-bot {
+  text-align: center;
+}
+
+.footer-bot__icon-gruop {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.footer-bot__icon-gruop::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 56px;
+  height: 56px;
+  background: #1565D8;
+  border-radius: 2000px;
+  z-index: -1;
+}
+
+.footer-bot__icon {
+  position: relative;
+  top: 17px;
+  left: 0;
+}
+
+.footer-bot__copyright-link {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "OpenSans-Bold", sans-serif;
+  color: #5A7184;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 90%;

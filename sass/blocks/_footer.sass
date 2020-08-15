@@ -1,0 +1,85 @@
+.footer
+  margin-bottom: 80px
+  &-top
+    display: grid
+    grid-template-columns: 263px repeat(4, minmax(165px, max-content))
+    grid-gap: 30px
+    margin-bottom: 96px
+    &__item
+      &--logotype
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &__logo
+      margin-bottom: 27px
+    &__text
+      font-size: 16px
+      line-height: 28px
+      margin-bottom: 32px
+      color: $text
+    &__social
+      &-gruop
+        display: flex
+        width: 185px
+        justify-content: space-between
+      &-item
+        position: relative
+        &::after
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          width: 40px
+          height: 40px
+          background: $text
+          opacity: 0.1
+          border-radius: 2000px
+      &-icon
+        position: relative
+        top: 12px
+        left: 12px
+    &__title
+      font-size: 18px
+      line-height: 25px
+      font-family: $open-sans700
+      margin: 0
+      margin-bottom: 31px
+    &__list
+      &-item
+        font-size: 16px
+        line-height: 22px
+        margin-bottom: 24px
+      &-link
+        &:hover
+          color: $blue
+  &-bot 
+    text-align: center
+    &__icon-gruop
+      position: relative
+      margin-bottom: 60px
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        width: 56px
+        height: 56px
+        background: $blue
+        border-radius: 2000px
+        z-index: -1
+    &__icon
+      position: relative
+      top: 17px
+      left: 0
+    &__copyright-link
+      font-size: 16px
+      line-height: 22px
+      font-family: $open-sans600
+      color: $text
+
+
+
+
+
+
