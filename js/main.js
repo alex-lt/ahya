@@ -16,14 +16,26 @@ $(document).ready(function(){
   filter.on('click', function (event) {
     event.preventDefault();
     var cat = $(this).data('filter'); 
-    $("[data-cat]").each(function () {
-      var itemCat = $(this).data('cat');
-      if(itemCat != cat) {
-        $(this).addClass('hide');
-      } else {
-        $(this).removeClass('hide');
-      }
-    });
+    
+    if(cat == 'new') {
+      $("[data-cat]").removeClass('hide');
+    } else {
+
+      $("[data-cat]").each(function () {
+        var itemCat = $(this).data('cat');
+        if(itemCat != cat) {
+          $(this).addClass('hide');
+        } else {
+          $(this).removeClass('hide');
+        }   
+      });
+    }
+
+    if(cat == 'card') {
+      $("[data-cat]").removeClass('hide');
+    }
+      
+    
   });
 
   // testimonial slider

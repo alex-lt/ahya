@@ -441,6 +441,10 @@ template {
   display: none;
 }
 
+.hide-card {
+  display: none;
+}
+
 @font-face {
   font-family: "OpenSans";
   font-family-src: url("../fonts/open-sans/OpenSans-Regular.woff") format("woff");
