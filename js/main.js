@@ -27,15 +27,9 @@ $(document).ready(function(){
           $(this).addClass('hide');
         } else {
           $(this).removeClass('hide');
-        }   
+        }
       });
     }
-
-    if(cat == 'card') {
-      $("[data-cat]").removeClass('hide');
-    }
-      
-    
   });
 
   // testimonial slider
@@ -81,6 +75,16 @@ $(document).ready(function(){
   
   })
 
-
+  // validation 
+  $(".form").each( function(){
+    $(this).validate({
+      errorClass: "validate",
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+      }
+    });
+  });
 
 });
