@@ -3,7 +3,7 @@
   &-top
     display: grid
     grid-template-columns: 263px repeat(4, minmax(165px, max-content))
-    grid-gap: 30px
+    column-gap: 30px
     margin-bottom: 96px
     &__item
       &--logotype
@@ -49,6 +49,8 @@
         font-size: 16px
         line-height: 22px
         margin-bottom: 24px
+        &:last-child
+          margin-bottom: 0
       &-link
         &:hover
           color: $blue
