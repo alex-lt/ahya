@@ -943,7 +943,7 @@ template {
   font-family: "HKGrotesk-SemiBold", sans-serif;
   margin-top: 28px;
   margin-bottom: 24px;
-  margin-right: 75px;
+  margin-right: 85px;
 }
 
 .stories__text {
@@ -1013,7 +1013,7 @@ template {
   padding: 20px 32px 20px 20px;
   width: 312px;
   min-height: 178px;
-  background-color: #FFFFFF;
+  background-color: #FAFDFF;
   position: absolute;
   bottom: 20px;
   left: 10px;
@@ -1388,16 +1388,45 @@ template {
     max-width: 90%;
   }
   .newsletter-text {
-    width: 50%;
+    max-width: 50%;
   }
   .subscribe {
-    width: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 957px) {
+  .footer {
+    margin-bottom: 64px;
+  }
+  .footer-top {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 263px (minmax(165px, max-content))[2];
+        grid-template-columns: 263px repeat(2, minmax(165px, -webkit-max-content));
+        grid-template-columns: 263px repeat(2, minmax(165px, max-content));
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+    row-gap: 48px;
+    margin-bottom: 62px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-top__item--logotype {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
   }
 }
 
 @media (max-width: 768px) {
   .container {
     max-width: 90%;
+    margin: auto;
   }
   .header {
     margin-bottom: 30px;
@@ -1652,6 +1681,7 @@ template {
     padding: 72px 141px 80px 141px;
   }
   .newsletter-text {
+    max-width: 486px;
     text-align: center;
   }
   .newsletter__title {
@@ -1662,19 +1692,25 @@ template {
     margin: 0;
     margin-bottom: 56px;
   }
+  .subscribe {
+    max-width: 447px;
+  }
   .footer {
     margin-bottom: 64px;
   }
   .footer-top {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 253px (minmax(165px, max-content))[2];
-        grid-template-columns: 253px repeat(2, minmax(165px, -webkit-max-content));
-        grid-template-columns: 253px repeat(2, minmax(165px, max-content));
+    -ms-grid-columns: 220px (minmax(150px, max-content))[2];
+        grid-template-columns: 220px repeat(2, minmax(150px, -webkit-max-content));
+        grid-template-columns: 220px repeat(2, minmax(150px, max-content));
     -webkit-column-gap: 30px;
             column-gap: 30px;
     row-gap: 48px;
     margin-bottom: 62px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer-top__item--logotype {
     -ms-grid-row: 1;

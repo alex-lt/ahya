@@ -1,0 +1,53 @@
+@media (min-width: 769px)
+  .header
+    &__navbar
+      &-link
+        &--hover
+          &:hover
+            color: $blue
+      &-button
+        &--hover
+          &:hover
+            color: $primary
+            border: 2px solid $primary
+  
+  .hero 
+    &__button
+      &--hover
+        &:hover
+          color: $primary
+          background-color: transparent
+          border: 2px solid $primary
+
+
+  .collection
+    &-text
+      &__link
+        &--hover
+          &:hover
+            border-bottom: 1px solid $blue 
+
+            
+
+  .stories
+    &-button
+      &--prev
+        &:hover
+          background-image: url(../img/stories/arrow-left-hover.svg)
+          transition: linear 0.3s
+      &--next
+        &:hover
+          background-image: url(../img/stories/arrow-right-hover.svg)
+          transition: linear 0.3s
+    
+  .subscribe
+    &__button
+      &:hover
+        background-color: $blue
+
+  .footer
+    &-top
+      &__list
+        &-link
+          &:hover
+            color: $blue
