@@ -526,6 +526,14 @@ template {
           justify-content: space-between;
 }
 
+.header__navbar-close {
+  display: none;
+}
+
+.header__navbar-img--dn {
+  display: none;
+}
+
 .header__navbar-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -537,6 +545,10 @@ template {
       -ms-flex-align: center;
           align-items: center;
   min-width: 397px;
+}
+
+.header__navbar-menu--visible {
+  display: block;
 }
 
 .header__navbar-menu--dn {
@@ -562,10 +574,6 @@ template {
   border: 2px solid #1565D8;
   color: #1565D8;
   padding: 13px 24px;
-}
-
-.navbar__button-menu {
-  display: none;
 }
 
 .hero {
@@ -1395,6 +1403,64 @@ template {
   }
   .header__navbar {
     display: none;
+  }
+  .header__navbar--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+    position: absolute;
+    padding: 36px 24px;
+    max-width: 304px;
+    max-height: 324px;
+    background-color: #FFFFFF;
+    top: 0;
+    right: 0;
+  }
+  .header__navbar-button {
+    width: 100%;
+    margin: 0;
+  }
+  .header__navbar-menu--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    min-width: 304px;
+    margin: 0;
+  }
+  .header__navbar-item {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: left;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+  }
+  .close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    display: block !important;
+  }
+  .close-img {
+    display: block !important;
+    width: 100%;
   }
   .button-menu {
     display: -webkit-box;

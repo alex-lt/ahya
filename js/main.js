@@ -1,13 +1,22 @@
 $(document).ready(function(){
   
-  // $(window).resize(function () {
-  //     if($(window).width() <= 768) {
-  //         $('.hero__button').removeClass('hero__button--hover');
-  //         $('.header__navbar-link').removeClass('header__navbar-link--hover');
-  //         $('.header__navbar-button').removeClass('header__navbar-button--hover');
-  //         $('.collection-text__link').removeClass('collection-text__link--hover');
-  //     };
-  // });
+  var menuButton = $(".button-menu");
+  var closeBtn = $(".close");
+  menuButton.on('click', openMenu)
+  closeBtn.on('click', closeMenu)
+ 
+  function openMenu() {
+    var navbarMenu = $(".header__navbar");
+    navbarMenu.addClass("header__navbar--visible");
+  }
+  function closeMenu(event) {
+    event.preventDefault();
+    var navbarMenu = $(".header__navbar");
+    navbarMenu.removeClass("header__navbar--visible");
+  }
+
+
+ 
 
   // filtres
 

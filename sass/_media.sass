@@ -151,6 +151,50 @@
     margin-bottom: 30px
     &__navbar
       display: none
+      &--visible
+        display: flex
+        flex-direction: column
+        justify-content: normal
+        position: absolute
+        padding: 36px 24px
+        max-width: 304px
+        max-height: 324px
+        background-color: $bg-color
+        top: 0
+        right: 0
+      &-button
+        width: 100%  
+        margin: 0
+      &-menu
+        &--mobile
+          display: flex
+          flex-direction: column
+          text-align: left
+          align-items: start
+          min-width: 304px
+          margin: 0
+      &-item
+        font-size: 16px
+        line-height: 22px
+        margin: 0
+        margin-bottom: 20px
+        text-align: left
+        justify-content: normal
+  .close
+    position: absolute
+    top: 12px
+    right: 16px
+    display: block !important
+    &-img
+      display: block !important
+      width: 100%
+
+
+
+ 
+
+
+
           
   .button
     &-menu
@@ -170,6 +214,8 @@
         width: 22px
         height: 2px
         background-color: $mobile-menu
+
+    
   //header
 
   //hero
