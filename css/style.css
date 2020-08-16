@@ -447,6 +447,11 @@ template {
   display: flex;
 }
 
+.active {
+  font-family: "OpenSans-Bold", sans-serif;
+  color: #183B56;
+}
+
 @font-face {
   font-family: "OpenSans";
   font-family-src: url("../fonts/open-sans/OpenSans-Regular.woff") format("woff");
