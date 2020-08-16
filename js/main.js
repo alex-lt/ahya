@@ -83,10 +83,12 @@ $(document).ready(function(){
   $(".form").each( function(){
     $(this).validate({
       errorClass: "validate",
-        email: {
-          required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com"
-        },
+        messages: {
+          email: {
+            required: "We need your email address to contact you",
+            email: "Your email address must be in the format of name@domain.com"
+          }
+        }  
       });
     });
 });
