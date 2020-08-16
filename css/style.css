@@ -1055,7 +1055,7 @@ template {
 }
 
 .newsletter-text {
-  max-width: 50%;
+  max-width: 486px;
 }
 
 .newsletter__title {
@@ -1073,7 +1073,7 @@ template {
 }
 
 .subscribe {
-  max-width: 50%;
+  width: 447px;
   height: 56px;
   position: relative;
   border-radius: 8px;
