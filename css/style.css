@@ -984,6 +984,7 @@ template {
 
 .stories__swiper-wrapper {
   max-width: 662px;
+  margin: 0 1px;
 }
 
 .stories-slide {
@@ -2493,8 +2494,7 @@ template {
     border: 2px solid #183B56;
   }
   .collection-text__link--hover:hover {
-    color: #183B56;
-    fill: #183B56;
+    border-bottom: 1px solid #1565D8;
   }
   .stories-button--prev:hover {
     background-image: url(../img/stories/arrow-left-hover.svg);
