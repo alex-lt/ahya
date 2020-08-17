@@ -19,7 +19,7 @@
         </a>
         <div class="header__navbar">
           <a href="#" class="a close header__navbar-close" data-backdrop="static" tabindex="-1" data-keyboard="true">
-            <img src="img/close.svg" alt="" class="img close-img header__navbar-img--dn">
+            <img src="img/close.svg" alt="" class="img close-img header__navbar header__navbar-img header__navbar-img--dn">
           </a>
             <ul class="ul header__navbar-menu header__navbar-menu--mobile">
               <li class="li header__navbar-item">
@@ -40,7 +40,7 @@
             </ul>
             <button class="button button--no-bg header__navbar-button header__navbar-button--hover">Get it now</button>
         </div>
-        <button class="button button-menu header__navbar-menu--dn">
+        <button class="button button-menu header__navbar-menu header__navbar-menu--dn">
           <span class="button-menu__line"></span>
           <span class="button-menu__line"></span>
           <span class="button-menu__line"></span>
@@ -125,18 +125,19 @@
 
   <section class="trending">
     <div class="container">
-      <div class="trending-top__wrapper">
+      <div class="trending-top trending-top__wrapper">
         <h1 class="trending-top__title">Trending Items</h1>
-        <ul class="ul trending-top__category">
-          <li class="li trending-top__item">
-            <a data-filter="new" href="#" class="a trending-top__link active">New Arrival</a>
+        <ul class="ul trending-top trending-top__category">
+          <li class="li trending-top trending-top__item">
+            <a data-filter="new" href="#" class="a trending-top trending-top__link active">New Arrival</a>
           </li>
-          <li class="li trending-top__item">
-            <a data-filter="best" href="#" class="a trending-top__link">Best Sellers</a>
+          <li class="li trending-top trending-top__item">
+            <a data-filter="best" href="#" class="a trending-top trending-top__link">Best Sellers</a>
           </li>
-          <li class="li trending-top__item">
+          <li class="li trending-top trending-top__item">
             <a data-filter="upcoming" href="#" class="a trending-top__link">Upcoming</a>
           </li>
+        </ul>
       </div>
       <!-- /.trending-top__wrapper -->
       <div class="trending-card">
@@ -240,7 +241,7 @@
 
         <div class="trending-card__item trending-card__item--more">
           
-          <a href="#" class="a trending-card__link--more trending-card__link--more--hover">
+          <a href="#" class="a trending-card__link trending-card__link--more trending-card__link--more--hover">
             <div class="trending-card__images">
               <img src="img/trending/Image.svg" alt="Photo: next" class="img trending-card__img">
             </div>
@@ -398,7 +399,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
-        <div class="footer-top__item--logotype">
+        <div class="footer-top__item footer-top__item--logotype">
           <img src="img/Logo.svg" alt="Logo: ehya" class="img footer-top__logo">
           <span class="footer-top__text">
             Build a modern and creative website with crealand

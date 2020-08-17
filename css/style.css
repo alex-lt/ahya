@@ -1525,6 +1525,9 @@ template {
     width: 100%;
     margin: 0;
   }
+  .header__navbar-menu {
+    min-width: 0;
+  }
   .header__navbar-menu--mobile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1895,6 +1898,7 @@ template {
     font-size: 28px;
     line-height: 36px;
     margin-bottom: 16px;
+    width: 100%;
   }
   .stories__text {
     font-size: 16px;
