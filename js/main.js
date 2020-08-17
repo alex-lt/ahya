@@ -98,6 +98,32 @@ $(document).ready(function(){
             email: "Your email address must be in the format of name@domain.com"
           }
         }  
-      });
     });
+  });
+
+  //modal
+
+  var button = $(".subscribe__button");
+  var closeButton = $(".modal-dialog__close");
+  //button.on("click", send);
+  closeButton.on("click", close);
+
+
+  function send() {
+    var modalOverlay = $(".modal-overlay");
+    var modalDialog = $(".modal-dialog");
+    modalOverlay.addClass('modal-overlay--visible');
+    modalDialog.addClass('modal-dialog--visible');
+  }
+
+  function close(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal-overlay");
+    var modalDialog = $(".modal-dialog");
+    modalOverlay.removeClass('modal-overlay--visible');
+    modalDialog.removeClass('modal-dialog--visible');
+  }
+
 });
+
+

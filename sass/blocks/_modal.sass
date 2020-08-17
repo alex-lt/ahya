@@ -1,0 +1,43 @@
+.modal
+  &-overlay
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: rgba(88, 101, 109, 0.39)
+    z-index: 100
+    visibility: hidden
+    opacity: 0
+    &--visible
+      visibility: visible
+      opacity: 1
+  &-dialog
+    max-width: 478px
+    height: 200px
+    padding: 33px 88px
+    background-color: $stories-bg
+    color: $text
+    border-radius: 8px
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 101
+    visibility: hidden
+    opacity: 0
+    overflow: auto
+    &--visible
+      visibility: visible
+      opacity: 1
+    &__close-image
+      position: absolute
+      top: 18px
+      right: 18px
+    &__title
+      font-family: $hk-grotesk600
+      font-size: 18px
+      line-height: 23px
+      text-transform: uppercase
+      text-align: center
+      margin: 43px auto

@@ -350,17 +350,17 @@ template {
 }
 
 @font-face {
-  font-family: "OpenSans-Bold";
-  src: url("../fonts/open-sans/OpenSans-Bold.woff") format("woff");
-  src: url("../fonts/open-sans/OpenSans-Bold.woff2") format("woff2");
+  font-family: "OpenSans-SemiBold";
+  src: url("../fonts/open-sans/OpenSans-SemiBold.woff") format("woff");
+  src: url("../fonts/open-sans/OpenSans-SemiBold.woff2") format("woff2");
   font-style: normal;
   font-style-font-weight: 600;
 }
 
 @font-face {
-  font-family: "OpenSans-SemiBold";
-  font-family-src: url("../fonts/open-sans/OpenSans-SemiBold.woff") format("woff");
-  src: url("../fonts/open-sans/OpenSans-SemiBold.woff2") format("woff2");
+  font-family: "OpenSans-Bold";
+  font-family-src: url("../fonts/open-sans/OpenSans-Bold.woff") format("woff");
+  src: url("../fonts/open-sans/OpenSans-Bold.woff2") format("woff2");
   font-style: normal;
   font-style-font-weight: 700;
 }
@@ -374,17 +374,17 @@ template {
 }
 
 @font-face {
-  font-family: "HKGrotesk-Bold";
-  src: url("../fonts/hk-grotesk/HKGrotesk-Bold.woff") format("woff");
-  src: url("../fonts/hk-grotesk/HKGrotesk-Bold.woff2") format("woff2");
+  font-family: "HKGrotesk-SemiBold";
+  src: url("../fonts/hk-grotesk/HKGrotesk-SemiBold.woff") format("woff");
+  src: url("../fonts/hk-grotesk/HKGrotesk-SemiBold.woff2") format("woff2");
   font-style: normal;
   font-style-font-weight: 600;
 }
 
 @font-face {
-  font-family: "HKGrotesk-SemiBold";
-  font-family-src: url("../fonts/hk-grotesk/HKGrotesk-SemiBold.woff") format("woff");
-  src: url("../fonts/hk-grotesk/HKGrotesk-SemiBold.woff2") format("woff2");
+  font-family: "HKGrotesk-Bold";
+  font-family-src: url("../fonts/hk-grotesk/HKGrotesk-Bold.woff") format("woff");
+  src: url("../fonts/hk-grotesk/HKGrotesk-Bold.woff2") format("woff2");
   font-style: normal;
   font-style-font-weight: 700;
 }
@@ -448,7 +448,7 @@ template {
 }
 
 .active {
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans-SemiBold", sans-serif;
   color: #183B56;
 }
 
@@ -461,17 +461,17 @@ template {
 }
 
 @font-face {
-  font-family: "OpenSans-Bold";
-  src: url("../fonts/open-sans/OpenSans-Bold.woff") format("woff");
-  src: url("../fonts/open-sans/OpenSans-Bold.woff2") format("woff2");
+  font-family: "OpenSans-SemiBold";
+  src: url("../fonts/open-sans/OpenSans-SemiBold.woff") format("woff");
+  src: url("../fonts/open-sans/OpenSans-SemiBold.woff2") format("woff2");
   font-style: normal;
   font-style-font-weight: 600;
 }
 
 @font-face {
-  font-family: "OpenSans-SemiBold";
-  font-family-src: url("../fonts/open-sans/OpenSans-SemiBold.woff") format("woff");
-  src: url("../fonts/open-sans/OpenSans-SemiBold.woff2") format("woff2");
+  font-family: "OpenSans-Bold";
+  font-family-src: url("../fonts/open-sans/OpenSans-Bold.woff") format("woff");
+  src: url("../fonts/open-sans/OpenSans-Bold.woff2") format("woff2");
   font-style: normal;
   font-style-font-weight: 700;
 }
@@ -485,17 +485,17 @@ template {
 }
 
 @font-face {
-  font-family: "HKGrotesk-Bold";
-  src: url("../fonts/hk-grotesk/HKGrotesk-Bold.woff") format("woff");
-  src: url("../fonts/hk-grotesk/HKGrotesk-Bold.woff2") format("woff2");
+  font-family: "HKGrotesk-SemiBold";
+  src: url("../fonts/hk-grotesk/HKGrotesk-SemiBold.woff") format("woff");
+  src: url("../fonts/hk-grotesk/HKGrotesk-SemiBold.woff2") format("woff2");
   font-style: normal;
   font-style-font-weight: 600;
 }
 
 @font-face {
-  font-family: "HKGrotesk-SemiBold";
-  font-family-src: url("../fonts/hk-grotesk/HKGrotesk-SemiBold.woff") format("woff");
-  src: url("../fonts/hk-grotesk/HKGrotesk-SemiBold.woff2") format("woff2");
+  font-family: "HKGrotesk-Bold";
+  font-family-src: url("../fonts/hk-grotesk/HKGrotesk-Bold.woff") format("woff");
+  src: url("../fonts/hk-grotesk/HKGrotesk-Bold.woff2") format("woff2");
   font-style: normal;
   font-style-font-weight: 700;
 }
@@ -556,7 +556,7 @@ template {
 }
 
 .header__navbar-item {
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans-SemiBold", sans-serif;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
@@ -594,7 +594,7 @@ template {
   padding: 6px 16px;
   font-size: 14px;
   line-height: 20px;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans-SemiBold", sans-serif;
   color: #36B37E;
   text-transform: uppercase;
   position: relative;
@@ -663,7 +663,7 @@ template {
 }
 
 .hero__advantages-text {
-  font-family: "HKGrotesk-Bold", sans-serif;
+  font-family: "HKGrotesk-SemiBold", sans-serif;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.2px;
@@ -736,11 +736,11 @@ template {
 }
 
 .collection-text__link {
-  font-weight: bold;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
   color: #1565D8;
+  font-family: "OpenSans-Bold", sans-serif;
 }
 
 .collection-text__icon {
@@ -819,6 +819,14 @@ template {
   background-color: #1565D8;
   max-height: 350px;
   padding: 120px 0 104px 0;
+}
+
+.trending-card__title {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  font-family: "HKGrotesk-Bold", sans-serif;
+  margin: 20px auto 3px 10px;
 }
 
 .trending-card__wrapper {
@@ -919,7 +927,7 @@ template {
   padding: 6px 16px;
   font-size: 14px;
   line-height: 20px;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans-SemiBold", sans-serif;
   color: #36B37E;
   text-transform: uppercase;
   position: relative;
@@ -941,7 +949,7 @@ template {
   font-size: 48px;
   line-height: 60px;
   letter-spacing: 0.2px;
-  font-family: "HKGrotesk-SemiBold", sans-serif;
+  font-family: "HKGrotesk-Bold", sans-serif;
   margin-top: 28px;
   margin-bottom: 24px;
   margin-right: 85px;
@@ -1023,14 +1031,14 @@ template {
   font-size: 22px;
   line-height: 32px;
   letter-spacing: 0.2px;
-  font-family: "HKGrotesk-Bold", sans-serif;
+  font-family: "HKGrotesk-SemiBold", sans-serif;
   margin-bottom: 12px;
 }
 
 .stories-slide__link {
   font-size: 16px;
   line-height: 22px;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans-SemiBold", sans-serif;
   color: #1565D8;
   margin-bottom: 20px;
 }
@@ -1071,7 +1079,7 @@ template {
   font-size: 48px;
   line-height: 60px;
   letter-spacing: 0.2px;
-  font-family: "HKGrotesk-SemiBold", sans-serif;
+  font-family: "HKGrotesk-Bold", sans-serif;
   color: #FFFFFF;
 }
 
@@ -1104,7 +1112,7 @@ template {
   border: none;
   font-size: 16px;
   line-height: 22px;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans-SemiBold", sans-serif;
 }
 
 .subscribe__input:placeholder {
@@ -1198,7 +1206,7 @@ template {
 .footer-top__title {
   font-size: 18px;
   line-height: 25px;
-  font-family: "OpenSans-SemiBold", sans-serif;
+  font-family: "OpenSans-Bold", sans-serif;
   margin: 0;
   margin-bottom: 31px;
 }
@@ -1245,8 +1253,63 @@ template {
 .footer-bot__copyright-link {
   font-size: 16px;
   line-height: 22px;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans-SemiBold", sans-serif;
   color: #5A7184;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(88, 101, 109, 0.39);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-dialog {
+  max-width: 478px;
+  height: 200px;
+  padding: 33px 88px;
+  background-color: #FAFDFF;
+  color: #5A7184;
+  border-radius: 8px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  overflow: auto;
+}
+
+.modal-dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-dialog__close-image {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+}
+
+.modal-dialog__title {
+  font-family: "HKGrotesk-SemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 43px auto;
 }
 
 @media (max-width: 1200px) {
@@ -1455,8 +1518,8 @@ template {
     max-width: 304px;
     max-height: 324px;
     background-color: #FFFFFF;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 8px;
   }
   .header__navbar-button {
     width: 100%;
@@ -1897,17 +1960,6 @@ template {
     margin-bottom: 64px;
     padding: 0;
   }
-  .hero::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(47.32%, rgba(238, 238, 238, 0.0001)), color-stop(65.51%, #E8EAE9));
-    background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%);
-    top: 442px;
-    left: 0;
-    z-index: -2;
-  }
   .hero-wrapper {
     padding: 383px 0 36px 0;
     text-align: center;
@@ -1985,7 +2037,7 @@ template {
     width: 100%;
   }
   .collection-images__img--1 {
-    height: 390px;
+    height: 300px;
   }
   .collection-text {
     padding: 36px 0 0 0;
@@ -2176,7 +2228,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 64px 20px;
+    padding: 64px 0;
   }
   .newsletter-text {
     text-align: center;
@@ -2213,7 +2265,7 @@ template {
     border: none !important;
     font-size: 16px;
     line-height: 22px;
-    font-family: "OpenSans-Bold", sans-serif;
+    font-family: "OpenSans-SemiBold", sans-serif;
   }
   .subscribe__input:placeholder {
     color: #959EAD;
@@ -2227,7 +2279,7 @@ template {
     background-color: #183B56;
     font-size: 18px;
     line-height: 25px;
-    font-family: "OpenSans-Bold", sans-serif;
+    font-family: "OpenSans-SemiBold", sans-serif;
     color: #FFFFFF;
   }
   .footer {
@@ -2277,14 +2329,6 @@ template {
   }
 }
 
-@media (min-width: 382px) {
-  .stories__badges {
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-}
-
 @media (max-width: 320px) {
   .container {
     max-width: 290px;
@@ -2295,21 +2339,9 @@ template {
   .hero {
     max-width: 320px;
     background: url(../img/hero/hero-bg-320.jpg) no-repeat center;
-    margin-bottom: 64px;
-  }
-  .hero::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(47.32%, rgba(238, 238, 238, 0.0001)), color-stop(65.51%, #E8EAE9));
-    background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%);
-    top: 660px;
-    left: 0;
-    z-index: -2;
   }
   .hero-wrapper {
-    padding: 383px 0 36px 0;
+    padding: 310px 0 36px 0;
     text-align: center;
   }
   .hero__title {
@@ -2572,7 +2604,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 64px 20px;
+    padding: 64px 0;
   }
   .newsletter-text {
     text-align: center;
@@ -2609,7 +2641,7 @@ template {
     border: none !important;
     font-size: 16px;
     line-height: 22px;
-    font-family: "OpenSans-Bold", sans-serif;
+    font-family: "OpenSans-SemiBold", sans-serif;
   }
   .subscribe__input:placeholder {
     color: #959EAD;
@@ -2623,7 +2655,7 @@ template {
     background-color: #183B56;
     font-size: 18px;
     line-height: 25px;
-    font-family: "OpenSans-Bold", sans-serif;
+    font-family: "OpenSans-SemiBold", sans-serif;
     color: #FFFFFF;
   }
   .footer {
@@ -2651,6 +2683,14 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .footer-top__social-gruop {
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+  }
+  .footer-top__list-item {
+    font-size: 14px;
+    line-height: 20px;
   }
   .footer-top__text {
     text-align: center;
