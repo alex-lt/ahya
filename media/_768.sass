@@ -44,7 +44,7 @@
     display: block !important
     &-img
       display: block !important
-      width: 100%
+      padding: 0
 
           
   .button
@@ -100,7 +100,7 @@
       justify-content: center
     &-images
       display: grid
-      grid-template-columns: repeat(2, 200px)
+      grid-template-columns: repeat(2, 320px)
     &-text
       padding: 40px 37px 0 0
       &__title
@@ -121,7 +121,7 @@
       &__wrapper
         margin: auto
         margin-bottom: 56px
-        flex-wrap: wrap
+        flex-direction: column
         justify-content: center
       &__title
         margin-bottom: 28px
@@ -132,7 +132,7 @@
         line-height: 25px
       
     &-card
-      grid-template-columns: repeat(2, 43%)
+      grid-template-columns: repeat(2, 280px)
       grid-gap: 48px
       justify-content: center
 
@@ -179,6 +179,11 @@
       display: flex
       justify-content: space-between
       align-items: center
+      &__item
+        max-width: 322px !important
+      &__wrapper
+        max-width: 322px !important
+        bottom: 20px !important
   //stories
 
   //newsletter
@@ -190,7 +195,7 @@
       align-items: center
       justify-content: space-between
       flex-direction: column
-      padding: 72px 141px 80px 141px
+      padding: 73px 118px 80px 118px
     &-text
       max-width: 486px
       text-align: center
@@ -209,7 +214,7 @@
     margin-bottom: 64px
     &-top
       display: grid
-      grid-template-columns: 220px repeat(2, minmax(150px, max-content))
+      grid-template-columns: 253px repeat(2, minmax(165px, max-content))
       column-gap: 30px
       row-gap: 48px
       margin-bottom: 62px

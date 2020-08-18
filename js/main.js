@@ -95,7 +95,7 @@ $(document).ready(function(){
         messages: {
           email: {
             required: "We need your email address to contact you",
-            email: "Your email address must be in the format of name@domain.com"
+            email: "Еmail address format of name@domain.com"
           }
         }  
     });
@@ -105,7 +105,7 @@ $(document).ready(function(){
 
   var button = $(".subscribe__button");
   var closeButton = $(".modal-dialog__close");
-  //button.on("click", send);
+  // button.on("click", send);
   closeButton.on("click", close);
 
 

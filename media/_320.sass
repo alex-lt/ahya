@@ -4,14 +4,17 @@
 
   // header
   .header
-    margin-bottom: 24px
+    margin-bottom: 15px
+  .container-320
+    max-width: 272px
+  
   //header
-
 
    //hero
   .hero
     max-width: 320px
     background: url(../img/hero/hero-bg-320.jpg) no-repeat center
+    height: 899px
     // margin-bottom: 64px
     // &::after
     //   content: ''
@@ -23,26 +26,34 @@
     //   left: 0
     //   z-index: -2
     &-wrapper
-      padding: 310px 0 36px 0
+      padding: 383px 0 36px 0
       text-align: center
     &__title
-      font-size: 32px
+      font-size: 31px
       line-height: 40px
     &__text
       font-size: 16px
       line-height: 28px  
+      padding-right: 0
+      margin-bottom: 24px
     &__button
       font-size: 16px
       line-height: 22px 
+      margin-bottom: 22px
+      max-height: 48px
+      padding: 11px 48px
     &__advantages
       flex-wrap: wrap
       &-item
         justify-items: center
         &--ml
-          margin-left: 35%
+          margin-left: 33%
           margin-top: 16px
       &-text
-        font-size: 15px
+        font-size: 16px !important
+      &-icon
+        width: 26px
+        margin-right: 12px
 
 
   //hero 
@@ -72,18 +83,19 @@
         object-fit: cover
         width: 100%  
         &--1
-          height: 390px
+          max-height: 300px !important
     &-text
-      padding: 36px 0 0 0
+      padding: 30px 0 0 0
       text-align: center
       &__title
-        font-size: 27px
+        font-size: 28px
         line-height: 36px
         margin-bottom: 16px
       &__text
         font-size: 16px
         line-height: 28px
         margin-bottom: 24px
+        max-width: 280px
       &__link
         font-size: 16px
         line-height: 22px
@@ -91,23 +103,26 @@
 
   // trending
   .trending
-    margin-bottom: 48px
+    margin-bottom: 66px
     &-top
+      margin-bottom: 12px
       &__title
-        margin-bottom: 28px
+        margin-bottom: 23px
         font-size: 28px
         line-height: 36px
       &__link
-        font-size: 13px
+        font-size: 16px
         line-height: 22px
+      &__item
+        margin-right: 17px
       
     &-card
-      grid-template-columns: repeat(2, 140px)
+      grid-template-columns: repeat(2, 140px) !important
       grid-column-gap: 10px
       grid-row-gap: 20px
       justify-content: normal
       &__images
-        max-height: 170px
+        max-height: 170px !important
         &--more
           max-height: 170px
           padding: 40px 0 29px 0
@@ -126,25 +141,32 @@
         line-height: 24px
       &__shopping
         margin-left: 9px
+        width: 14px
 
   // trending
   
   //testimonial
   .testimonial
+    margin-bottom: 50px
     &-container
-      width: 290px
+      width: 280px
     &__img
-      margin-bottom: 13px
+      margin-bottom: -5px
+      height: 81px
+      width: 70px
     &__text
       font-size: 18px
       line-height: 36px
       letter-spacing: 0.12px
       margin-bottom: 24px
+      max-width: 280px
     &__name
       font-size: 20px
       line-height: 24px
+      margin: auto
       margin-bottom: 24px
-      padding: 0 59px 0 60px
+      padding: 0 
+      max-width: 161px
       &::before
         content: '- '
         color: $primary
@@ -152,11 +174,11 @@
 
   //stories
   .stories
-    margin-bottom: 80px
+    margin-bottom: 40px
     &__wrapper-top
       margin: auto
-      margin-top: 79px
-      margin-bottom: 36px
+      margin-top: 35px
+      margin-bottom: 17px
       max-width: 510px
       display: flex
       flex-wrap: wrap
@@ -168,12 +190,13 @@
     &__title
       font-size: 28px
       line-height: 36px
-      margin-bottom: 16px
+      margin-bottom: 18px
+      margin-top: 19px
     &__text
       font-size: 16px
       line-height: 28px
       margin-bottom: 36px
-
+      max-width: 280px
     &-container
       max-width: 280px
       display: flex
@@ -198,12 +221,15 @@
       &__img
         max-height: 277px 
       &__wrapper
-        padding: 20px 
+        padding: 20px 10px 20px 20px
         min-height: 110px
+        bottom: 0 !important
+        max-width: 270px !important
       &__title
         font-size: 20px
         line-height: 24px
-        margin-bottom: 16px
+        margin-bottom: 17px
+        margin-top: 0
       &__link
         font-size: 16px
         line-height: 22px
@@ -211,8 +237,8 @@
 
   //newsletter
   .newsletter
-    min-height: 413px
-    margin-bottom: 51px
+    min-height: 414px
+    margin-bottom: 46px
     &-wrapper
       display: flex
       align-items: center
@@ -275,9 +301,11 @@
       justify-content: center
       display: grid
       grid-template-columns: repeat(2, 129px)
-      column-gap: 30px
+      column-gap: 15px
       margin-bottom: 62px
-      row-gap: 40px     
+      row-gap: 40px
+      &__logo
+        margin-bottom: 15px     
       &__item
         &--logotype
           grid-row: 3
@@ -290,11 +318,16 @@
         &-item
           font-size: 14px
           line-height: 20px
+          margin-bottom: 15px
+      &__title
+        font-size: 17px
+        margin-bottom: 21px
       &__text
         text-align: center
         font-size: 14px
         line-height: 24px
-        margin-bottom: 16px
+        margin-bottom: 19px
+        max-width: 263px
     &-bot
       display: none
       &__title

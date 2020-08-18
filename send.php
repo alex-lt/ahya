@@ -52,6 +52,6 @@ catch (Exception $e) {
 }
 
 // Отображение результата
-//header('location: ../index.html');
+header('location: thanks.html');
 
 

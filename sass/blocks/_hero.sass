@@ -8,6 +8,7 @@
   border-radius: 8px
   &-wrapper
     padding: 62px 0 46px 37px
+    max-width: 625px
   &__badges
     padding: 6px 16px
     font-size: 14px
@@ -26,6 +27,25 @@
       background-color: $badges
       opacity: 0.1
       border-radius: 2000px
+  &__thanks
+    padding: 6px 16px
+    font-size: 14px
+    line-height: 20px
+    font-family: $open-sans600
+    color: $badges
+    text-transform: uppercase
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 115px
+      height: 32px
+      background-color: $badges
+      opacity: 0.1
+      border-radius: 2000px
+
   &__title
     font-size: 56px
     line-height: 68px
@@ -35,7 +55,7 @@
   &__text
     font-size: 20px
     line-height: 36px
-    margin-bottom: 52px
+    margin-bottom: 50px
     color: $text
   &__button
     min-width: 185px
