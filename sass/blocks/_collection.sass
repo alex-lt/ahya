@@ -1,11 +1,12 @@
 .collection
-  margin-bottom: 145px
+  margin-bottom: 143px
   &-wrapper
     display: flex
     justify-content: space-between
   &-images
     display: grid
     grid-template-columns: repeat(2, 320px)
+    grid-template-rows: repeat(2,230px)
     grid-gap: 30px
     &__item
       border-radius: 8px
@@ -20,7 +21,9 @@
         grid-row-start: 2
 
   &-text
-    padding: 10px 20px 55px 46px
+    padding: 9px 20px 55px 13px
+    max-width: 425px
+    min-height: 392px
     &__title
       font-size: 48px
       line-height: 60px
@@ -32,7 +35,7 @@
       font-size: 20px
       line-height: 36px
       color: $text
-      margin-bottom: 32px
+      margin-bottom: 40px
     &__link
       font-size: 18px
       line-height: 25px
@@ -44,6 +47,6 @@
       //     color: $primary
       //     fill: $primary
     &__icon 
-      margin-left: 31px
+      margin-left: 27px
 
 

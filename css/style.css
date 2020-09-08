@@ -343,10 +343,10 @@ template {
 
 @font-face {
   font-family: "OpenSans";
-  font-family-src: url("../fonts/open-sans/OpenSans-Regular.woff") format("woff");
+  src: url("../fonts/open-sans/OpenSans-Regular.woff") format("woff");
   src: url("../fonts/open-sans/OpenSans-Regular.woff2") format("woff2");
   font-style: normal;
-  font-style-font-weight: normal;
+  font-weight: normal;
   font-display: swap;
 }
 
@@ -355,25 +355,25 @@ template {
   src: url("../fonts/open-sans/OpenSans-SemiBold.woff") format("woff");
   src: url("../fonts/open-sans/OpenSans-SemiBold.woff2") format("woff2");
   font-style: normal;
-  font-style-font-weight: 600;
+  font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
   font-family: "OpenSans-Bold";
-  font-family-src: url("../fonts/open-sans/OpenSans-Bold.woff") format("woff");
+  src: url("../fonts/open-sans/OpenSans-Bold.woff") format("woff");
   src: url("../fonts/open-sans/OpenSans-Bold.woff2") format("woff2");
   font-style: normal;
-  font-style-font-weight: 700;
+  font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
   font-family: "HKGrotesk";
-  font-family-src: url("../fonts/hk-grotesk/HKGrotesk-Regular.woff") format("woff");
+  src: url("../fonts/hk-grotesk/HKGrotesk-Regular.woff") format("woff");
   src: url("../fonts/hk-grotesk/HKGrotesk-Regular.woff2") format("woff2");
   font-style: normal;
-  font-style-font-weight: normal;
+  font-weight: normal;
   font-display: swap;
 }
 
@@ -382,16 +382,16 @@ template {
   src: url("../fonts/hk-grotesk/HKGrotesk-SemiBold.woff") format("woff");
   src: url("../fonts/hk-grotesk/HKGrotesk-SemiBold.woff2") format("woff2");
   font-style: normal;
-  font-style-font-weight: 600;
+  font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
   font-family: "HKGrotesk-Bold";
-  font-family-src: url("../fonts/hk-grotesk/HKGrotesk-Bold.woff") format("woff");
+  src: url("../fonts/hk-grotesk/HKGrotesk-Bold.woff") format("woff");
   src: url("../fonts/hk-grotesk/HKGrotesk-Bold.woff2") format("woff2");
   font-style: normal;
-  font-style-font-weight: 700;
+  font-weight: 700;
   font-display: swap;
 }
 
@@ -463,9 +463,6 @@ template {
   position: absolute;
   line-height: 13px;
   color: tomato;
-  padding-right: 140px;
-  padding-left: 48px;
-  padding-top: 40px;
 }
 
 .validate::-webkit-input-placeholder {
@@ -484,62 +481,8 @@ template {
   color: tomato;
 }
 
-@font-face {
-  font-family: "OpenSans";
-  font-family-src: url("../fonts/open-sans/OpenSans-Regular.woff") format("woff");
-  src: url("../fonts/open-sans/OpenSans-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-style-font-weight: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "OpenSans-SemiBold";
-  src: url("../fonts/open-sans/OpenSans-SemiBold.woff") format("woff");
-  src: url("../fonts/open-sans/OpenSans-SemiBold.woff2") format("woff2");
-  font-style: normal;
-  font-style-font-weight: 600;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "OpenSans-Bold";
-  font-family-src: url("../fonts/open-sans/OpenSans-Bold.woff") format("woff");
-  src: url("../fonts/open-sans/OpenSans-Bold.woff2") format("woff2");
-  font-style: normal;
-  font-style-font-weight: 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "HKGrotesk";
-  font-family-src: url("../fonts/hk-grotesk/HKGrotesk-Regular.woff") format("woff");
-  src: url("../fonts/hk-grotesk/HKGrotesk-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-style-font-weight: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "HKGrotesk-SemiBold";
-  src: url("../fonts/hk-grotesk/HKGrotesk-SemiBold.woff") format("woff");
-  src: url("../fonts/hk-grotesk/HKGrotesk-SemiBold.woff2") format("woff2");
-  font-style: normal;
-  font-style-font-weight: 600;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "HKGrotesk-Bold";
-  font-family-src: url("../fonts/hk-grotesk/HKGrotesk-Bold.woff") format("woff");
-  src: url("../fonts/hk-grotesk/HKGrotesk-Bold.woff2") format("woff2");
-  font-style: normal;
-  font-style-font-weight: 700;
-  font-display: swap;
-}
-
 .header {
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 }
 
 .header-wrapper {
@@ -607,7 +550,7 @@ template {
           filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1));
   border: 2px solid #1565D8;
   color: #1565D8;
-  padding: 13px 24px;
+  padding: 12px 23px;
 }
 
 .header .close-img {
@@ -632,7 +575,7 @@ template {
 .hero__badges {
   padding: 6px 16px;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 31px;
   font-family: "OpenSans-SemiBold", sans-serif;
   color: #36B37E;
   text-transform: uppercase;
@@ -675,7 +618,7 @@ template {
 
 .hero__title {
   font-size: 56px;
-  line-height: 68px;
+  line-height: 69px;
   letter-spacing: 0.2px;
   font-family: "HKGrotesk-Bold", sans-serif;
   margin: 28px 0 28px 0;
@@ -694,7 +637,7 @@ template {
   line-height: 25px;
   text-align: center;
   color: #FFFFFF;
-  padding: 16px 40px;
+  padding: 14px 39px;
   font-family: "OpenSans-Bold", sans-serif;
   margin-bottom: 48px;
   border: 2px solid transparent;
@@ -720,7 +663,7 @@ template {
 }
 
 .hero__advantages-icon {
-  margin-right: 8px;
+  margin-right: 6px;
 }
 
 .hero__advantages-text {
@@ -731,7 +674,7 @@ template {
 }
 
 .collection {
-  margin-bottom: 145px;
+  margin-bottom: 143px;
 }
 
 .collection-wrapper {
@@ -748,6 +691,8 @@ template {
   display: grid;
   -ms-grid-columns: (320px)[2];
       grid-template-columns: repeat(2, 320px);
+  -ms-grid-rows: (230px)[2];
+      grid-template-rows: repeat(2, 230px);
   grid-gap: 30px;
 }
 
@@ -777,7 +722,9 @@ template {
 }
 
 .collection-text {
-  padding: 10px 20px 55px 46px;
+  padding: 9px 20px 55px 13px;
+  max-width: 425px;
+  min-height: 392px;
 }
 
 .collection-text__title {
@@ -793,7 +740,7 @@ template {
   font-size: 20px;
   line-height: 36px;
   color: #5A7184;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 .collection-text__link {
@@ -805,11 +752,11 @@ template {
 }
 
 .collection-text__icon {
-  margin-left: 31px;
+  margin-left: 27px;
 }
 
 .trending {
-  margin-bottom: 145px;
+  margin-bottom: 143px;
 }
 
 .trending-top__wrapper {
@@ -840,7 +787,7 @@ template {
 }
 
 .trending-top__item {
-  margin-right: 38px;
+  margin-right: 42px;
 }
 
 .trending-top__item:last-child {
@@ -860,6 +807,9 @@ template {
       grid-template-columns: repeat(4, 260px);
   grid-column-gap: 30px;
   grid-row-gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .trending-card__icon {
@@ -887,7 +837,7 @@ template {
   line-height: 32px;
   letter-spacing: 0.2px;
   font-family: "HKGrotesk-Bold", sans-serif;
-  margin: 20px auto 3px 10px;
+  margin: 20px auto 4px 11px;
 }
 
 .trending-card__wrapper {
@@ -900,7 +850,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 10px;
+  padding: 0 11px;
 }
 
 .trending-card__price {
@@ -909,12 +859,20 @@ template {
   line-height: 36px;
 }
 
+.trending-card__link {
+  margin: 0 -3px -3px 0;
+}
+
 .testimonial {
-  margin-bottom: 80px;
+  margin-bottom: 68px;
 }
 
 .testimonial-container {
-  width: 800px;
+  max-width: 800px;
+}
+
+.testimonial-slide {
+  padding: 0 1px;
 }
 
 .testimonial__img {
@@ -922,7 +880,7 @@ template {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   width: 80px;
   height: 92px;
 }
@@ -982,8 +940,8 @@ template {
 }
 
 .stories__wrapper-top {
-  margin-top: 121px;
-  max-width: 392px;
+  margin-top: 117px;
+  max-width: 375px;
 }
 
 .stories__badges {
@@ -994,6 +952,7 @@ template {
   color: #36B37E;
   text-transform: uppercase;
   position: relative;
+  left: -5px;
 }
 
 .stories__badges::after {
@@ -1013,17 +972,19 @@ template {
   line-height: 60px;
   letter-spacing: 0.2px;
   font-family: "HKGrotesk-Bold", sans-serif;
-  margin-top: 28px;
+  margin-top: 34px;
   margin-bottom: 24px;
   margin-right: 85px;
+  margin-left: -5px;
 }
 
 .stories__text {
   font-size: 20px;
   line-height: 36px;
   color: #5A7184;
-  margin-bottom: 42px;
+  margin-bottom: 48px;
   margin-top: 0;
+  margin-left: -5px;
 }
 
 .stories-button {
@@ -1069,7 +1030,8 @@ template {
   max-width: 322px;
   min-height: 475px;
   border-radius: 8px;
-  margin-right: 28px;
+  margin-right: 20px;
+  margin-left: 7px;
 }
 
 .stories-slide__item:last-child {
@@ -1081,12 +1043,12 @@ template {
 }
 
 .stories-slide__wrapper {
-  padding: 20px 32px 20px 20px;
+  padding: 0 32px 20px 20px;
   width: 322px;
   min-height: 178px;
   background-color: #FAFDFF;
   position: absolute;
-  bottom: 20px;
+  bottom: -1px;
   left: 10px;
 }
 
@@ -1095,7 +1057,7 @@ template {
   line-height: 32px;
   letter-spacing: 0.2px;
   font-family: "HKGrotesk-SemiBold", sans-serif;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .stories-slide__link {
@@ -1125,11 +1087,8 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: relative;
-  max-width: 1077px;
+  max-width: 1140px;
   padding: 58px 0 58px 0;
   margin: auto;
 }
@@ -1144,12 +1103,15 @@ template {
   letter-spacing: 0.2px;
   font-family: "HKGrotesk-Bold", sans-serif;
   color: #FFFFFF;
+  margin-top: 43px;
+  margin-bottom: 14px;
 }
 
 .newsletter__text {
   font-size: 18px;
   line-height: 32px;
   color: #FFFFFF;
+  margin: 0;
 }
 
 .subscribe {
@@ -1158,6 +1120,8 @@ template {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
+  margin-top: 38px;
+  margin-left: 144px;
 }
 
 .subscribe__icon {
@@ -1238,7 +1202,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 185px;
+  width: 161px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1290,7 +1254,7 @@ template {
 
 .footer-bot__icon-gruop {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 
 .footer-bot__icon-gruop::after {
