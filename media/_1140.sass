@@ -1,4 +1,22 @@
-@media (max-width: 768px)
+@media (max-width: 1140px)
+  //collection
+  .collection
+    &-wrapper
+      justify-content: normal
+      flex-wrap: wrap
+    &-images
+      grid-template-columns: repeat(2, 360px)
+      grid-template-rows: repeat(2, 250px)
+      grid-gap: 10px
+      align-content: center
+      margin: auto
+    &-text
+      max-width: 730px
+      min-height: 392px
+      margin: auto
+      padding: 0
+  //collection
+
   //stories
   .stories
     margin-bottom: 80px
@@ -29,11 +47,4 @@
       display: flex
       justify-content: space-between
       align-items: center
-      &__item
-        max-width: 285px
-      &__wrapper
-        max-width: 285px
-        padding: 20px 55px 20px 20px
-        bottom: 40px
-
   //stories

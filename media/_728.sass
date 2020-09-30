@@ -1,0 +1,76 @@
+@media (max-width: 728px)
+
+  .collection
+    &-images
+      grid-template-columns: repeat(2, 300px)
+      grid-template-rows: repeat(2, 233px)
+      grid-gap: 10px
+
+  //stories
+  .stories
+    margin-bottom: 80px
+    &-wrapper
+      flex-wrap: wrap
+    &__wrapper-top
+      margin: auto
+      margin-top: 70px 
+      margin-bottom: 36px
+      max-width: 510px
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      text-align: center
+    &__badges
+      left: -3px
+    &__title
+      margin-top: 24px
+      margin-bottom: 17px
+    &__text
+      margin-bottom: 32px
+    &-button
+      &--prev
+        left: -4%
+      &--next
+        right: 0
+    &-container
+      padding: 0
+      min-width: auto
+      max-width: 587px 
+      margin: 2px auto -6px 
+    &-slide
+      display: flex
+      justify-content: normal
+      align-items: center
+      &__item
+        min-width: auto 
+        max-width: 280px
+        margin-left: 0
+      &__wrapper
+        max-width: 280px 
+        bottom: 0px 
+        padding: 20px 18px 20px 15px 
+      &__img
+        min-width: auto 
+        max-width: inherit
+        min-height: 317px
+      &__title
+        margin-top: 0
+        font-size: 20px
+ 
+  //stories
+
+  // trending
+  .trending 
+    &-card
+      grid-template-columns: repeat(2, 43%)
+      grid-gap: 48px
+      justify-content: center
+
+  // trending
+
+  //footer
+  .footer
+    &-top
+      grid-template-columns: 220px repeat(2, minmax(150px, max-content))
+
+  //footer

@@ -9,7 +9,7 @@ require 'phpmailer/Exception.php';
 $email = $_POST['email'];
 
 // Формирование самого письма
-$title = "Новое обращение Best Tour Plan";
+$title = "Новая подписка с сайта Ehya";
 $body = "
 <h2>Новое обращение</h2>
 <b>Почта:</b><br>$email

@@ -79,6 +79,7 @@ $(document).ready(function(){
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    spaceBetween: 100,
   
     // Navigation arrows
     navigation: {
@@ -89,17 +90,30 @@ $(document).ready(function(){
   })
 
   // validation 
-  $(".form").each( function(){
-    $(this).validate({
-      errorClass: "validate",
-        messages: {
-          email: {
-            required: "We need your email address to contact you",
-            email: "Еmail address format of name@domain.com"
-          }
-        }  
-    });
-  });
+  // $(".form").each( function(){
+  //   $(this).validate({
+  //     errorClass: "validate",
+  //       messages: {
+  //         email: {
+  //           required: "We need your email address to contact you",
+  //           email: "Еmail address format name@mail.com"
+  //         }
+  //       }  
+  //   });
+  // });
+
+    $(".subscribe__input").on('input invalid', function(){
+      this.setCustomValidity('')
+    if (this.validity.valueMissing) {
+      this.setCustomValidity("We need your email address to contact you")
+    }
+    if (this.validity.typeMismatch) {
+      this.setCustomValidity("Еmail address format name@mail.com")
+    }
+    })
+
+    
+ 
 
   //modal
 

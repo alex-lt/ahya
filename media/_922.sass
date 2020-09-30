@@ -20,9 +20,11 @@
       justify-content: center
     &-images
       display: grid
-      grid-template-columns: repeat(2, 200px)
+      grid-template-columns: repeat(2, 310px)
+      grid-template-rows: repeat(2, 241px)
     &-text
       padding: 40px 37px 0 0
+      max-width: 640px
       &__title
         font-size: 48px
         line-height: 60px
@@ -34,7 +36,12 @@
   //collection
   
   //trending
-
+  .trending  
+    &-card
+      &__title
+        font-size: 22px
+        line-height: 32px
+        margin: 20px auto 4px 0p
   //trending
 
   //testimonial
@@ -83,4 +90,5 @@
       max-width: 50%
   .subscribe
     max-width: 50%
+    margin-left: 0
   //newsletter

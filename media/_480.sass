@@ -49,14 +49,15 @@
 
   //collection
   .collection
-    margin-bottom: 64px
+    margin-bottom: -60px
     &-wrapper
       justify-content: center
       flex-wrap: wrap
       align-items: center
     &-images
       display: grid
-      grid-template-columns: repeat(2, 138px)
+      grid-template-columns: repeat(2, 150px)
+      grid-template-rows: repeat(2, 350px)
       grid-gap: 14px
       &__item
         &--1
@@ -73,10 +74,11 @@
         object-fit: cover
         width: 100%  
         &--1
-          height: 300px
+          height: 390px
     &-text
-      padding: 36px 0 0 0
+      padding: 0
       text-align: center
+      margin-top: -205px
       &__title
         font-size: 27px
         line-height: 36px
@@ -170,7 +172,7 @@
       line-height: 36px
       margin-right: 1px
       margin-bottom: 16px
-      margin-top: 56px
+      margin-top: 25px
     &__text
       font-size: 16px
       line-height: 28px
@@ -221,7 +223,9 @@
       align-items: center
       justify-content: space-between
       flex-direction: column
-      padding: 64px 0 
+      // padding: 64px 0 
+      padding: 0
+      
     &-text
       text-align: center
     &__title
@@ -234,33 +238,34 @@
       margin-bottom: 36px
 
   .subscribe
-    position: static !important
-    width: 280px !important
-    height: 48px !important
-    overflow: visible !important
+    position: static 
+    min-width: auto
+    min-width: 280px 
+    height: 48px 
+    overflow: visible 
     &__icon
       position: absolute
-      padding: 18px 12px 19px 20px !important
+      padding: 18px 12px 19px 20px 
       z-index: 1
     &__input
-      position: static !important
-      width: 280px !important
-      height: 48px !important
+      position: static 
+      width: 280px 
+      height: 48px 
       border-radius: 8px
       margin-bottom: 10px
-      padding: 13px 20px 13px 48px !important
-      outline: none !important
-      border: none !important
+      padding: 13px 20px 13px 48px 
+      outline: none 
+      border: none 
       font-size: 16px
       line-height: 22px
       font-family: $open-sans600
       &:placeholder
         color: $grey
     &__button
-      position: static !important
+      position: static 
       z-index: 2
-      width: 280px !important
-      height: 48px !important
+      width: 280px 
+      height: 48px 
       padding: 12px 24px 
       background-color: $primary
       font-size: 18px
@@ -274,6 +279,8 @@
   //footer
   .footer
     margin-bottom: 64px
+    &-container
+      margin-left: 21px
     &-top
       justify-content: center
       display: grid

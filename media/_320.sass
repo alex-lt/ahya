@@ -5,6 +5,12 @@
   // header
   .header
     margin-bottom: 15px
+    &__link
+      margin-left: -2px
+      margin-top: 2px
+    &__navbar-menu
+      margin-right: 5px
+      margin-top: -2px
   .container-320
     max-width: 272px
   
@@ -25,25 +31,33 @@
     //   top: 588px
     //   left: 0
     //   z-index: -2
+    border-radius: 0
+    &__badges
+      left: -2px
     &-wrapper
-      padding: 383px 0 36px 0
+      padding: 375px 0 36px 0
       text-align: center
     &__title
       font-size: 31px
       line-height: 40px
+      margin: 16px 0 21px -8px
     &__text
       font-size: 16px
       line-height: 28px  
       padding-right: 0
       margin-bottom: 24px
+      margin: 0 0 24px -3px
     &__button
       font-size: 16px
       line-height: 22px 
       margin-bottom: 22px
       max-height: 48px
       padding: 11px 48px
+      margin-left: -4px
     &__advantages
       flex-wrap: wrap
+      margin-left: 12px
+      max-width: 262px
       &-item
         justify-items: center
         &--ml
@@ -53,20 +67,21 @@
         font-size: 16px !important
       &-icon
         width: 26px
-        margin-right: 12px
+        margin-right: 8px
 
 
   //hero 
 
   //collection
   .collection
-    margin-bottom: 64px
+    margin-bottom: -5px
     &-wrapper
       flex-wrap: wrap
       align-items: center
     &-images
       display: grid
       grid-template-columns: repeat(2, 138px)
+      grid-template-rows: repeat(2, 298px)
       grid-gap: 14px
       &__item
         &--1
@@ -87,29 +102,38 @@
     &-text
       padding: 30px 0 0 0
       text-align: center
+      margin-top: -194px
+      margin-left: 0
       &__title
         font-size: 28px
         line-height: 36px
         margin-bottom: 16px
+        letter-spacing: 0.2px
       &__text
         font-size: 16px
         line-height: 28px
-        margin-bottom: 24px
+        margin-bottom: 23px
         max-width: 280px
+        margin-left: 3px
       &__link
         font-size: 16px
         line-height: 22px
+        margin-left: 2px
+      &__icon
+        margin-left: 26px
+        vertical-align: middle
   //collection
 
   // trending
   .trending
-    margin-bottom: 66px
+    margin-bottom: 50px
     &-top
       margin-bottom: 12px
       &__title
-        margin-bottom: 23px
+        margin-bottom: 25px
         font-size: 28px
         line-height: 36px
+        margin-left: -3px
       &__link
         font-size: 16px
         line-height: 22px
@@ -117,25 +141,28 @@
         margin-right: 17px
       
     &-card
-      grid-template-columns: repeat(2, 140px) !important
+      grid-template-columns: repeat(2, 140px) 
       grid-column-gap: 10px
-      grid-row-gap: 20px
+      grid-row-gap: 25px
       justify-content: normal
       &__images
         max-height: 170px !important
         &--more
           max-height: 170px
           padding: 40px 0 29px 0
+      &__img
+        min-width: 100%
       &__title
         font-size: 16px
         line-height: 20px
-        margin: 13px 0 3px 0
+        margin: 13px 0 3px -1px
         &--more
            padding: 0 23px 0 33px
            margin-top: 21px
       &__wrapper
         justify-content: normal
         padding: 0
+        margin-left: -3px
       &__price
         font-size: 14px
         line-height: 24px
@@ -154,6 +181,7 @@
       margin-bottom: -5px
       height: 81px
       width: 70px
+      margin-left: 384px
     &__text
       font-size: 18px
       line-height: 36px
@@ -167,6 +195,7 @@
       margin-bottom: 24px
       padding: 0 
       max-width: 161px
+      margin-left: 56px
       &::before
         content: '- '
         color: $primary
@@ -174,10 +203,10 @@
 
   //stories
   .stories
-    margin-bottom: 40px
+    margin-bottom: 50px
     &__wrapper-top
       margin: auto
-      margin-top: 35px
+      margin-top: 35px 
       margin-bottom: 17px
       max-width: 510px
       display: flex
@@ -187,18 +216,20 @@
     &__badges
       left: 0
       transform: translateX(0)
+      margin-left: -5px
     &__title
       font-size: 28px
       line-height: 36px
-      margin-bottom: 18px
-      margin-top: 19px
+      margin-bottom: 16px
+      margin-top: 20px
+      margin-left: -1px
     &__text
       font-size: 16px
       line-height: 28px
       margin-bottom: 36px
       max-width: 280px
     &-container
-      max-width: 280px
+      min-width: 280px
       display: flex
       margin: auto
     &__swiper
@@ -210,6 +241,7 @@
       &__item
         position: relative
         max-width: 270px
+        min-width: 270px 
         min-height: 407px
         border-radius: 8px
         overflow: hidden
@@ -221,10 +253,10 @@
       &__img
         max-height: 277px 
       &__wrapper
-        padding: 20px 10px 20px 20px
+        padding: 20px 10px 20px 20px 
         min-height: 110px
-        bottom: 0 !important
-        max-width: 270px !important
+        bottom: 0 
+        max-width: 270px 
       &__title
         font-size: 20px
         line-height: 24px
@@ -244,9 +276,13 @@
       align-items: center
       justify-content: space-between
       flex-direction: column
-      padding: 64px 0
+      // padding: 64px 0
+      padding: 0
+      margin-bottom: 24px
+      margin-top: -9px
     &-text
       text-align: center
+      margin-top: 63px
     &__title
       font-size: 28px
       line-height: 36px
@@ -257,13 +293,13 @@
       margin-bottom: 36px
 
   .subscribe
-    position: static !important
-    width: 280px !important
-    height: 48px !important
-    overflow: visible !important
+    position: static 
+    min-width: 280px 
+    height: 48px 
+    overflow: visible 
     &__icon
       position: absolute
-      padding: 18px 12px 19px 20px !important
+      padding: 18px 12px 19px 20px 
       z-index: 1
     &__input
       position: static !important
@@ -297,6 +333,8 @@
   //footer
   .footer
     margin-bottom: 64px
+    &-container
+      margin-left: 12px
     &-top
       justify-content: center
       display: grid
@@ -305,7 +343,9 @@
       margin-bottom: 62px
       row-gap: 40px
       &__logo
-        margin-bottom: 15px     
+        margin-bottom: 15px 
+        margin-top: 3px
+      margin-left: 4px    
       &__item
         &--logotype
           grid-row: 3
@@ -314,11 +354,13 @@
       &__social
         &-gruop
           transform: translateX(-5%)
+          margin-top: 2px
+          margin-left: 16px
       &__list
         &-item
           font-size: 14px
           line-height: 20px
-          margin-bottom: 15px
+          margin-bottom: 14px
       &__title
         font-size: 17px
         margin-bottom: 21px
@@ -328,6 +370,7 @@
         line-height: 24px
         margin-bottom: 19px
         max-width: 263px
+        margin-left: -11px
     &-bot
       display: none
       &__title
